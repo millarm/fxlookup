@@ -182,7 +182,7 @@ class BoEProvider:
 
         # Parse dates - BoE uses DD Mmm YYYY format
         try:
-            df[date_col] = pd.to_datetime(df[date_col], dayfirst=True)
+            df[date_col] = pd.to_datetime(df[date_col], dayfirst=True, format="mixed")
         except Exception as exc:
             raise SourceUnavailableError(
                 f"BoE response date column unparseable: {exc}", cause=exc

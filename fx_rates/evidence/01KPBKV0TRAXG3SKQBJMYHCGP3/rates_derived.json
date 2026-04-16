@@ -1,0 +1,22 @@
+{
+  "XUDLCDS": {
+    "pair": "GBP/CAD",
+    "rate": "1.8795",
+    "source_precision": 4
+  },
+  "XUDLERS": {
+    "pair": "GBP/EUR",
+    "rate": "1.1475",
+    "source_precision": 4
+  },
+  "XUDLJYS": {
+    "pair": "GBP/JPY",
+    "rate": "198.6379",
+    "source_precision": 4
+  },
+  "XUDLUSS": {
+    "pair": "GBP/USD",
+    "rate": "1.3472",
+    "source_precision": 4
+  }
+}

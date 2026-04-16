@@ -1,0 +1,30 @@
+{
+  "run_id": "01KPBKS7P5QSW4VYZQHFRDVPDY",
+  "source_date": "2025-01-24",
+  "applied_from": "2025-01-27",
+  "applied_to": "2025-02-02",
+  "written_at": "2026-04-16T17:00:26.345507+00:00",
+  "variance_info": {
+    "breaches": [
+      {
+        "pair": "GBP/JPY",
+        "pct_change": "2.095492666327071834809870656",
+        "prior": "190.423",
+        "current": "194.4133"
+      },
+      {
+        "pair": "GBP/USD",
+        "pct_change": "2.344646663387440564026889654",
+        "prior": "1.2198",
+        "current": "1.2484"
+      }
+    ]
+  },
+  "files": {
+    "boe_raw.csv": "0b7d345e8e5c1ace2b277293c5c2f989714701692b03968a3f12b23f5f8df4ce",
+    "boe_request.json": "fd03251ba002ad069432f9e376c3105b50413fd5a3a0f2a93b86f45a9090a7c4",
+    "rates_derived.json": "dd7c5cddf1cb9cbfd1632b353ead8a4d917818ae9ac8ada1921f51faec8a05f9",
+    "fbdi_upload.csv": "bdd7e6816ac24bfde845ef035f92683cf324f1abbc20c4f39a57b6030d1a28c8",
+    "GlDailyRatesInterface.zip": "1b51f5611173c41d9f3a05ce88a60484606a664803f4f51423d0938ab4da16a7"
+  }
+}

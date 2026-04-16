@@ -1,0 +1,17 @@
+{
+  "run_id": "01KPBKVP9RCS4GPPNK2V1Z4VVV",
+  "source_date": "2026-01-16",
+  "applied_from": "2026-01-19",
+  "applied_to": "2026-01-25",
+  "written_at": "2026-04-16T17:01:46.667359+00:00",
+  "variance_info": {
+    "breaches": []
+  },
+  "files": {
+    "boe_raw.csv": "72eb77ddfa39531e2b58d9f78ca0f25148adf64b741a7d08d9355d1a33cf4951",
+    "boe_request.json": "4d23a22420c75da2d1ae4bb2f5f57d6967438efc667ddff5532156ade250f8e9",
+    "rates_derived.json": "bdfb63b17592ef962189ab198a2d85959e034e0714b672e459b2bcd55c627188",
+    "fbdi_upload.csv": "152d3c7d8d915a9b8fe8ff6575429938bf8764ac9e4ec5109a2864800d6ae6a1",
+    "GlDailyRatesInterface.zip": "d755f08a49aa3d9c9f8e2a2520465767f33ddeefabb5091b35c7aaa14ffc6ede"
+  }
+}
