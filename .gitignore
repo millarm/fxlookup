@@ -1,0 +1,15 @@
+# Evidence packs and ledger - runtime artefacts, not source
+fx_rates/evidence/
+fx_rates/ledger.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.pycache
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Backfill script (operational, not part of the package)
+fx_rates/backfill.py
