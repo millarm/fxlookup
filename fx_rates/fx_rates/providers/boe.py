@@ -47,12 +47,25 @@ class BoEProvider:
         timeout: HTTP timeout in seconds (default 30).
     """
 
+    # BoE blocks headless requests without a plausible browser User-Agent
+    _DEFAULT_HEADERS = {
+        "User-Agent": (
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        ),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-GB,en;q=0.9",
+    }
+
     def __init__(
         self,
         session: requests.Session | None = None,
         timeout: int = 30,
     ) -> None:
-        self._session = session or requests.Session()
+        if session is None:
+            session = requests.Session()
+            session.headers.update(self._DEFAULT_HEADERS)
+        self._session = session
         self._timeout = timeout
 
         # Populated after fetch() for evidence pack
