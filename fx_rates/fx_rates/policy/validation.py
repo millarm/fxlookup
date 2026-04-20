@@ -94,8 +94,7 @@ def check_variance(
         current_rates: Mapping of ``(from_ccy, to_ccy)`` → current rate.
         prior_rates:   Mapping of ``(from_ccy, to_ccy)`` → prior rate.
                        Pairs absent from prior_rates are skipped.
-        force:         If True, HOLD errors are demoted to warnings.
-                       BLOCK errors are never overridable.
+        force:         If True, HOLD and BLOCK errors are demoted to warnings.
 
     Returns:
         List of all ``VarianceBreach`` objects (warning level and above).
@@ -143,7 +142,14 @@ def check_variance(
         )
 
     if block_breaches:
-        raise VarianceBlockError(block_breaches)
+        if force:
+            for b in block_breaches:
+                logger.warning(
+                    "Variance BLOCK overridden (--force) %s/%s: %.2f%%",
+                    b.from_ccy, b.to_ccy, b.pct_change,
+                )
+        else:
+            raise VarianceBlockError(block_breaches)
 
     if hold_breaches:
         all_hold = warn_breaches + hold_breaches
