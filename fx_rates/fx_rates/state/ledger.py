@@ -230,18 +230,33 @@ class RunLedger:
         return [self._row_to_run(dict(r)) for r in rows]
 
     def get_latest_successful_run_for_pair(
-        self, from_ccy: str, to_ccy: str
+        self, from_ccy: str, to_ccy: str, before_run_date: date | None = None
     ) -> RateRecord | None:
         """Return the most recent rate for a currency pair from a successful run."""
         try:
-            row = self._conn.execute(
+            if before_run_date is not None:
+                row = self._conn.execute(
+                    """
+                    SELECT r.*
+                      FROM rates r
+                      JOIN runs rn ON rn.run_id = r.run_id
+                     WHERE r.from_ccy = ? AND r.to_ccy = ?
+                       AND rn.status IN ('generated','uploaded','reconciled')
+                       AND rn.run_date < ?
+                     ORDER BY rn.run_date DESC
+                     LIMIT 1
+                    """,
+                    (from_ccy, to_ccy, before_run_date.isoformat()),
+                ).fetchone()
+            else:
+                row = self._conn.execute(
                 """
                 SELECT r.*
                   FROM rates r
                   JOIN runs rn ON rn.run_id = r.run_id
                  WHERE r.from_ccy = ? AND r.to_ccy = ?
                    AND rn.status IN ('generated','uploaded','reconciled')
-                 ORDER BY rn.created_at DESC
+                 ORDER BY rn.run_date DESC
                  LIMIT 1
                 """,
                 (from_ccy, to_ccy),

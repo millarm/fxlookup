@@ -208,7 +208,7 @@ def run_weekly(
     # Load prior rates for each pair
     prior_pair_rates: dict[tuple[str, str], Decimal] = {}
     for pair in pair_rates:
-        rec = ledger.get_latest_successful_run_for_pair(*pair)
+        rec = ledger.get_latest_successful_run_for_pair(*pair, before_run_date=run_date)
         if rec is not None:
             prior_pair_rates[pair] = rec.rate
 
