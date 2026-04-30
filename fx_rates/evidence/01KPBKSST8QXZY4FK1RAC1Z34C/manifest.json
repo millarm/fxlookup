@@ -1,0 +1,17 @@
+{
+  "run_id": "01KPBKSST8QXZY4FK1RAC1Z34C",
+  "source_date": "2025-04-17",
+  "applied_from": "2025-04-21",
+  "applied_to": "2025-04-27",
+  "written_at": "2026-04-16T17:00:44.627925+00:00",
+  "variance_info": {
+    "breaches": []
+  },
+  "files": {
+    "boe_raw.csv": "0869324737286f3fe29d502b736440090489fc3b938c8f6eed0509b72dd016ed",
+    "boe_request.json": "658d68effc9e16434f45507c2ca98fa6793b455591536845feb8b861ce29c38e",
+    "rates_derived.json": "7769faeef10258bb29bd1f32d76e0ab8b859c66ec474c15219d3f77d5c095f3c",
+    "fbdi_upload.csv": "2647cd1b99f9c3399b0512efb533dbaecd19c0eb916a2b0f4d791be353790c29",
+    "GlDailyRatesInterface.zip": "b5622c1de01734011573a98524de639b4c880843fa298e4abf56f3199a660e32"
+  }
+}

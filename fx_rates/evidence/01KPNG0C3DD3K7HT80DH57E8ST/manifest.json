@@ -1,0 +1,24 @@
+{
+  "run_id": "01KPNG0C3DD3K7HT80DH57E8ST",
+  "source_date": "2026-04-17",
+  "applied_from": "2026-04-20",
+  "applied_to": "2026-04-26",
+  "written_at": "2026-04-20T13:06:49.736922+00:00",
+  "variance_info": {
+    "breaches": [
+      {
+        "pair": "GBP/EUR",
+        "pct_change": "3.283933984506567867969013136",
+        "prior": "1.1876",
+        "current": "1.1486"
+      }
+    ]
+  },
+  "files": {
+    "boe_raw.csv": "35580722d78892fbc23c7d78862867d516b282098e46436ce5d94380b8774d0b",
+    "boe_request.json": "9aa4fb5767a4e1dab57278bda0f72d54eda8d6fd35e933a912a5922fd10dc0c6",
+    "rates_derived.json": "8de5ba5e02d4506578ca568177c19b6d8fe6788d46690a38e2bec80575bce52d",
+    "fbdi_upload.csv": "039028841bad0c41d7ea37208f52748c41548a66d149b4ee8ed0fff0e3e23125",
+    "GlDailyRatesInterface.zip": "838f88dc8bb26202986bb4e049887a54de3488d6aab962d6313e134d4250dc9b"
+  }
+}

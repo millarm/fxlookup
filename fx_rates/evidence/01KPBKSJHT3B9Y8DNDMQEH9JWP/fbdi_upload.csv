@@ -1,0 +1,5 @@
+From Currency,To Currency,User Conversion Type,From Conversion Date,To Conversion Date,Conversion Rate,Inverse Conversion Rate,Mode Flag
+GBP,CAD,Corporate,17/03/2025,23/03/2025,1.857000,,Insert
+GBP,EUR,Corporate,17/03/2025,23/03/2025,1.188000,,Insert
+GBP,JPY,Corporate,17/03/2025,23/03/2025,191.813600,,Insert
+GBP,USD,Corporate,17/03/2025,23/03/2025,1.291500,,Insert

@@ -1,0 +1,5 @@
+From Currency,To Currency,User Conversion Type,From Conversion Date,To Conversion Date,Conversion Rate,Inverse Conversion Rate,Mode Flag
+GBP,CAD,Corporate,25/08/2025,31/08/2025,1.870900,,Insert
+GBP,EUR,Corporate,25/08/2025,31/08/2025,1.154200,,Insert
+GBP,JPY,Corporate,25/08/2025,31/08/2025,198.614000,,Insert
+GBP,USD,Corporate,25/08/2025,31/08/2025,1.352500,,Insert

@@ -1,0 +1,21 @@
+{
+  "url": "https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp?csv.x=yes&Datefrom=10%2FMar%2F2026&Dateto=16%2FMar%2F2026&SeriesCodes=XUDLCDS%2CXUDLERS%2CXUDLJYS%2CXUDLUSS&CSVF=TN&UsingCodes=Y&VPD=Y&VFD=N",
+  "timestamp": "2026-04-16T17:01:58.619201+00:00",
+  "response_headers": {
+    "Content-Type": "application/csv",
+    "Server": "Microsoft-IIS/10.0",
+    "content-disposition": "attachment;filename=results.csv",
+    "X-Powered-By": "ASP.NET",
+    "Vary": "Accept-Encoding",
+    "Content-Encoding": "gzip",
+    "Content-Length": "150",
+    "Cache-Control": "private, max-age=60",
+    "Expires": "Thu, 16 Apr 2026 17:02:58 GMT",
+    "Date": "Thu, 16 Apr 2026 17:01:58 GMT",
+    "Connection": "keep-alive",
+    "Set-Cookie": "ASPSESSIONIDQGRQTCTT=FBALEPAAPOIAPEPAIMONKMAC; secure; path=/, AKA_A2=A; expires=Thu, 16-Apr-2026 18:01:58 GMT; path=/; domain=bankofengland.co.uk; secure; HttpOnly",
+    "Server-Timing": "cdn-cache; desc=MISS, edge; dur=20, origin; dur=264, ak_p; desc=\"1776358918297_389224276_1042852738_28278_7270_34_21_-\";dur=1",
+    "Link": "<https://www.bankofengland.co.uk/assets/fonts/GilroyForBOE-Bold.woff>;rel=\"preload\";as=\"font\";type=\"font/woff\";crossorigin,<https://www.bankofengland.co.uk/assets/fonts/GilroyForBOE-Regular.woff2>;rel=\"preload\";as=\"font\";type=\"font/woff2\";crossorigin"
+  },
+  "http_status": 200
+}

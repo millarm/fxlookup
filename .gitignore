@@ -1,5 +1,4 @@
-# Evidence packs and ledger - runtime artefacts, not source
-fx_rates/evidence/
+# Ledger - runtime artefact, not source
 fx_rates/ledger.db
 
 # Python

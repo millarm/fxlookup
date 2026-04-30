@@ -1,0 +1,5 @@
+From Currency,To Currency,User Conversion Type,From Conversion Date,To Conversion Date,Conversion Rate,Inverse Conversion Rate,Mode Flag
+GBP,CAD,Corporate,05/01/2026,11/01/2026,1.852300,,Insert
+GBP,EUR,Corporate,05/01/2026,11/01/2026,1.148600,,Insert
+GBP,JPY,Corporate,05/01/2026,11/01/2026,211.348400,,Insert
+GBP,USD,Corporate,05/01/2026,11/01/2026,1.349700,,Insert
